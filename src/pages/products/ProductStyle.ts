@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { headerHeight } from "../../GlobalStyle";
 
 export const ProductContainer = styled.div`
-    background-color: palegoldenrod;
     padding: 1rem;
     min-height: calc(100vh - ${headerHeight});
     display: grid;

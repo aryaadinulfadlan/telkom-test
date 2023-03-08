@@ -10,7 +10,7 @@ export default function Profile(): React.ReactElement {
     <ProfileContainer>
         <TopContent>
             <TopLeft>
-                <ProfileImage />
+                <ProfileImage width='120px' height='120px' border_radius='14px' />
                 <ProfileDesc>
                     <div>
                         <h3>Arya Adinul Fadlan</h3>

@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #d6ecff;
+    background-color: #ecf5f8;
     @media (min-width: 900px) {
         padding: 0 5vw;
     }

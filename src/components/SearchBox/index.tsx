@@ -25,6 +25,7 @@ const SearchContainer = styled.div`
     align-items: center;
     gap: 1rem;
     font-size: ${FontSize1};
+    box-shadow: 0px 2px 10px rgba(228, 226, 226, 0.78);
     input {
         width: 100%;
         border: none;
@@ -33,7 +34,7 @@ const SearchContainer = styled.div`
     button {
         border: none;
         outline: none;
-        background-color: green;
+        background-color: #609f1c;
         color: #fff;
         padding: 4px 10px;
         border-radius: 5px;

@@ -4,15 +4,21 @@ import { FontSize1 } from "../../GlobalStyle";
 type IconContentProps = {
     gap: string;
 }
+type ProfileImageProps = {
+    width: string;
+    height: string;
+    border_radius: string;
+}
 
 export const ProfileContainer = styled.div`
     background-color: white;
     border-radius: 1rem;
-    padding: 8px;
+    padding: 12px;
     display: grid;
     gap: 1rem;
     max-width: 700px;
     margin: 0 auto;
+    box-shadow: 0px 2px 10px rgba(228, 226, 226, 0.78);
 `;
 export const TopContent = styled.div`
     display: grid;
@@ -27,14 +33,14 @@ export const TopLeft = styled.div`
     grid-template-columns: auto 1fr;
     gap: 10px;
 `;
-export const ProfileImage = styled.div`
-    width: 120px;
-    height: 120px;
+export const ProfileImage = styled.div<ProfileImageProps>`
+    width: ${({ width }) => width};
+    height: ${({ height }) => height};
     background-image: url('https://avatars.githubusercontent.com/u/64993961?v=4');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 14px;
+    border-radius: ${({ border_radius }) => border_radius};
 `;
 export const ProfileDesc = styled.div`
     font-size: ${FontSize1};
