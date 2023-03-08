@@ -1,48 +1,13 @@
-import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { FontSize1, NolKoma7to1rem } from '../GlobalStyle'
+import { FontSize1 } from '../../GlobalStyle';
 
-type SidebarProps = {
-  show: boolean;
-  setShow: (params: boolean) => void;
-}
 type ContainerProps = {
   show: boolean;
 }
 
-export default function Sidebar({ show, setShow }: SidebarProps): React.ReactElement {
-  return (
-    <SidebarContainer show={show}>
-        <CloseIcon onClick={() => setShow(false)} / >
-        <Menu>
-          <li onClick={() => setShow(false)}>
-            <Link to={'/products'}>Products</Link>
-          </li>
-          <li onClick={() => setShow(false)}>
-            <Link to={'/'}>Layanan</Link>
-          </li>
-          <li onClick={() => setShow(false)}>
-            <Link to={'/'}>Integrasi</Link>
-          </li>
-          <li onClick={() => setShow(false)}>
-            <Link to={'/'}>Lainnya</Link>
-          </li>
-          <BtnWrap>
-            <li onClick={() => setShow(false)}>
-              <LoginButton to={'/'}>login</LoginButton>
-            </li>
-            <li onClick={() => setShow(false)}>
-              <DaftarButton to={'/'}>daftar</DaftarButton>
-            </li>
-          </BtnWrap>
-        </Menu>
-    </SidebarContainer>
-  )
-}
-
-const SidebarContainer = styled.div<ContainerProps>`
+export const SidebarContainer = styled.div<ContainerProps>`
     width: 100%;
     height: 100%;
     position: fixed;
@@ -60,7 +25,7 @@ const SidebarContainer = styled.div<ContainerProps>`
         background-color: transparent;
     }
 `
-const CloseIcon = styled(FaTimes)`
+export const CloseIcon = styled(FaTimes)`
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -71,7 +36,7 @@ const CloseIcon = styled(FaTimes)`
         display: none;
     }
 `
-const Menu = styled.ul`
+export const Menu = styled.ul`
   display: grid;
   width: 100%;
   gap: 2rem;
@@ -87,7 +52,7 @@ const Menu = styled.ul`
       gap: 1rem;
   }
 `
-const BtnWrap = styled.div`
+export const BtnWrap = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 1rem;

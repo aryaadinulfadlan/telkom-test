@@ -7,4 +7,5 @@ export const ProductContainer = styled.div`
     display: grid;
     grid-template-rows: auto auto 1fr;
     gap: 1rem;
+    background-color: #edf0f5;
 `;

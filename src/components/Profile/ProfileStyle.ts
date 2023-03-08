@@ -8,6 +8,7 @@ type ProfileImageProps = {
     width: string;
     height: string;
     border_radius: string;
+    img_src: string;
 }
 
 export const ProfileContainer = styled.div`
@@ -36,7 +37,7 @@ export const TopLeft = styled.div`
 export const ProfileImage = styled.div<ProfileImageProps>`
     width: ${({ width }) => width};
     height: ${({ height }) => height};
-    background-image: url('https://avatars.githubusercontent.com/u/64993961?v=4');
+    background-image: ${({ img_src }) => `url(${img_src})`};
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

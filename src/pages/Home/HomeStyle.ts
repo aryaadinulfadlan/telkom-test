@@ -120,6 +120,8 @@ export const RightContent = styled.div`
     align-items: flex-end;
     p {
         background-color: #fff;
+        padding: 0 10px;
+        border-radius: 5px;
     }
 `;
 export const DetailButton = styled.button`

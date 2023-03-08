@@ -6,7 +6,7 @@ export const ReposContainer = styled.div`
     margin: 0 auto;
     display: grid;
     gap: 10px;
-    margin-top: 5vw;
+    margin-top: 3vw;
     @media (min-width: 600px) {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
