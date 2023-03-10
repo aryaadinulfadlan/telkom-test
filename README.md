@@ -11,7 +11,7 @@
 8. Responsive mobile friendly
 
 ## How to use this web app
-1. First of all please visit the website's link: https://telkomtest.vercel.app/products
+1. First of all please visit the website's link: https://telkomtest.vercel.app
 2. The first page you see is Home Page called
 3. Navigate to Lists Repos Page by clicking "Repos" menu in navbar / sidebar
 4. You will redirect to Lists Repos Page, that contains lists of repos and github account with related repos

@@ -48,6 +48,9 @@ export const ProfileDesc = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    & > p {
+        word-break: break-all;
+    }
 `;
 export const TopRight = styled.div`
     display: flex;
@@ -65,6 +68,10 @@ export const IconContent = styled.div<IconContentProps>`
     align-items: center;
     gap: ${({ gap }) => gap};
     font-size: ${FontSize1};
+    & > a {
+        color: blue;
+        word-break: break-all;
+    }
 `;
 export const BottomContent = styled.div`
 
